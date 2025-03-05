@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make body take full height and use flexbox */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Header and Footer Styling */
+header,
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Main Content Area - Grows to fill space */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Content Box */
+.content {
+  background: lightgray;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Responsive: Adjust content width for small screens */
+@media (max-width: 600px) {
+  .content {
+    width: 95%;
+  }
+}
