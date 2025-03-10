@@ -32,6 +32,9 @@ main {
 
 /* Content Box */
 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   background: lightgray;
   padding: 20px;
   width: 80%;
