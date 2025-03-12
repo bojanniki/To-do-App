@@ -6,7 +6,9 @@ class TaskClass {
   // Creates a list item with task and buttons
   createListItem() {
     const li = document.createElement("li");
-    li.textContent = this.text;
+    let span = document.createElement("span");
+    span.textContent = this.text;
+    li.appendChild(span);
 
     const doneButton = document.createElement("button");
     doneButton.textContent = "Done";
@@ -23,7 +25,7 @@ class TaskClass {
 
     // Mark task as completed when Done button is clicked
     doneButton.addEventListener("click", function () {
-      li.style.textDecoration = "line-through";
+      span.style.textDecoration = "line-through"; // Only strike through the span
     });
 
     //
@@ -33,7 +35,6 @@ class TaskClass {
     return li; // Return the created <li> element
   }
 }
-ž;
 // Add task to list when the Add Button is clicked
 const element = document.getElementById("addButton");
 element.addEventListener("click", function () {

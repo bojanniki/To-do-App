@@ -34,6 +34,7 @@ main {
 .content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
   background: lightgray;
   padding: 20px;
@@ -42,7 +43,54 @@ main {
   text-align: center;
   border-radius: 10px;
 }
-
+/* add button styling */
+#addButton {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* done button, delete button styling */
+.done-button,
+.delete-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* done button, delete button hover styling */
+.done-button:hover,
+.delete-button:hover,
+#addButton:hover {
+  background-color: darkblue;
+}
+/* list element styling */
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+/* p element styling */
+p {
+  font-size: 20px;
+}
+/* input element styling */
+input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 50%; 
+  box-sizing: border-box; /
+}
 /* Responsive: Adjust content width for small screens */
 @media (max-width: 600px) {
   .content {
